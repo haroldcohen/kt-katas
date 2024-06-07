@@ -61,7 +61,7 @@ class NumberConverter(private var number: Int) {
         val num: Int = number
         number %= numeration
         return when (num) {
-            in 5 * numeration..<nextNumeration(numeration = numeration) -> this.convertUpperHalf(
+            in half(numeration = numeration)..<nextNumeration(numeration = numeration) -> this.convertUpperHalf(
                 num = num,
                 numeration = numeration
             )
