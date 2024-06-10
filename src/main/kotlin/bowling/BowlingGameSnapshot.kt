@@ -1,3 +1,5 @@
 package com.haroldcohen.bowling
 
-data class BowlingGameSnapshot (val score: Int) {}
+data class BowlingGameSnapshot(val score: Int = 0) {
+
+}
